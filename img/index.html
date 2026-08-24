@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La leyenda de One Piece: historia, línea de tiempo, la saga, el opening We Are!, juego de memoria y fuentes oficiales del manga de Eiichiro Oda.">
+  <title>La leyenda de One Piece · El gran tesoro</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Archivo:wght@500;700&display=swap" rel="stylesheet">
+
+  <link href="css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<header class="site-header" id="inicio">
+  <nav class="nav container" aria-label="Navegación principal">
+    <a class="nav-brand" href="#inicio">One Piece<span class="nav-dot">.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#biografia">Historia</a></li>
+      <li><a href="#linea-tiempo">Línea de tiempo</a></li>
+      <li><a href="#obras">La saga</a></li>
+      <li><a href="#video">Opening</a></li>
+      <li><a href="#juego">Juego</a></li>
+      <li><a href="#oficial">Oficial</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============ HERO con sombreros de paja flotando ============ -->
+<section class="hero">
+  <canvas id="butterflies" aria-hidden="true"></canvas>
+
+  <div class="hero-content container">
+    <p class="eyebrow reveal">Eiichiro Oda · Publicándose desde 1997</p>
+    <h1 class="hero-title reveal">La leyenda de <em>One Piece</em></h1>
+    <p class="hero-sub reveal">
+      El manga de Eiichiro Oda más leído de la historia: Monkey D. Luffy y los Sombrero
+      de Paja navegan el Grand Line tras el gran tesoro para coronarse Reyes de los Piratas.
+    </p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#biografia">Zarpar con Luffy</a>
+      <a class="btn btn-ghost" href="#obras"> Explorar la saga</a>
+    </div>
+  </div>
+
+  <div class="hero-stats container">
+    <div class="stat reveal"><span class="stat-num" data-count="1999">0</span><span class="stat-label">estreno del anime</span></div>
+    <div class="stat reveal"><span class="stat-num" data-count="1100">0</span><span class="stat-label">episodios del anime</span></div>
+    <div class="stat reveal"><span class="stat-num" data-count="500">0</span><span class="stat-label">millones de copias del manga</span></div>
+  </div>
+</section>
+
+<main>
+
+  <!-- ============ HISTORIA ============ -->
+  <section class="section" id="biografia">
+    <div class="container grid grid-2">
+
+      <article class="bio-text reveal">
+        <p class="eyebrow">Historia</p>
+        <h2>De un one-shot al récord Guinness</h2>
+        <p>
+          Todo comenzó en 1996, cuando Eiichiro Oda publicó <em>Romance Dawn</em>, el one-shot
+          donde aparecía por primera vez un joven pirata elástico llamado Monkey D. Luffy.
+          Un año después, el 22 de julio de 1997, <strong>One Piece</strong> debutaba en la revista
+          <em>Weekly Shōnen Jump</em> y empezaba la aventura más larga del manga moderno.
+        </p>
+        <p>
+          La historia sigue a Luffy, un chico que comió la <strong>Gomu Gomu no Mi</strong> —una
+          fruta del diablo que volvió su cuerpo de goma— y que sueña con encontrar el tesoro
+          del Rey de los Piratas Gol D. Roger para heredar su título. En el camino recluta una
+          tripulación inolvidable: Zoro, Nami, Usopp, Sanji, Chopper, Robin, Franky, Brook y Jinbe.
+        </p>
+        <p>
+          Con más de <strong>500 millones de copias</strong> circulando por el mundo, One Piece
+          ostenta el Récord Guinness al cómic con más ejemplares publicados de una misma serie
+          por un único autor. Su fórmula: aventura desmesurada, humor, amistad a toda vela y
+          arcos argumentales que se cuentan durante décadas sin perder el rumbo.
+        </p>
+        <p>
+          Hoy el manga supera los 1.100 capítulos, el anime ronda los 1.100 episodios y la saga
+          vive su tramo final hacia Laugh Tale, la isla donde aguarda el verdadero One Piece.
+        </p>
+      </article>
+
+      <figure class="bio-figure reveal">
+        <div class="bio-frame">
+          <img src="onepice.webp" alt="Ilustración de Monkey D. Luffy" width="600" height="800"
+               loading="lazy" decoding="async"
+               onerror="this.closest('.bio-frame').classList.add('no-photo'); this.remove();">
+          <div class="bio-fallback" aria-hidden="true">
+            <span class="bio-initials">OP</span>
+          </div>
+        </div>
+        <figcaption>El futuro Rey de los Piratas y su tripulación.</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ============ LÍNEA DE TIEMPO ============ -->
+  <section class="section section-alt" id="linea-tiempo">
+    <div class="container">
+      <p class="eyebrow reveal">Cronología</p>
+      <h2 class="reveal">Una travesía para contarla</h2>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1975</span>
+          <h3>Nace Eiichiro Oda</h3>
+          <p>El futuro autor crece en Kumamoto, Japón, dibujando piratas desde la infancia.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1996</span>
+          <h3>"Romance Dawn"</h3>
+          <p>Oda publica los one-shots que siembran todo el universo de One Piece.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1997</span>
+          <h3>Debuta el manga</h3>
+          <p>One Piece arranca en la Weekly Shōnen Jump: comienzan las aventuras de Luffy.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1999</span>
+          <h3>Estreno del anime</h3>
+          <p>Toei Animation lleva la serie a Fuji TV con el icónico opening "We Are!".</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">2015</span>
+          <h3>Récord Guinness</h3>
+          <p>Se reconoce a One Piece como el cómic con más ejemplares publicados por un solo autor.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">2021</span>
+          <h3>Episodio 1000</h3>
+          <p>El anime alcanza mil capítulos animados con una celebración mundial de los fans.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">2023</span>
+          <h3>Serie live-action</h3>
+          <p>Netflix estrena la versión con actores reales, producida con la supervisión del propio Oda.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ LA SAGA ============ -->
+  <section class="section" id="obras">
+    <div class="container">
+      <p class="eyebrow reveal">Universo en expansión</p>
+      <h2 class="reveal">La saga One Piece</h2>
+      <p class="section-intro reveal">Manga, anime, películas y juegos: cada formato suma piezas al mapa del Grand Line. Haz clic en cada tarjeta para leer más en Wikipedia.</p>
+
+      <div class="grid cards-grid">
+
+        <article class="card reveal">
+          <span class="card-year">1997</span>
+          <h3>El manga</h3>
+          <p>Más de 1.100 capítulos en la Weekly Shōnen Jump: el viaje de los Sombrero de Paja rumbo a Laugh Tale.</p>
+          <a class="card-link" href="https://es.wikipedia.org/wiki/One_Piece" target="_blank" rel="noopener">Leer más →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">1999</span>
+          <h3>El anime</h3>
+          <p>Toei Animation adapta el manga semana a semana desde 1999, con más de mil episodios emitidos.</p>
+          <a class="card-link" href="https://es.wikipedia.org/wiki/One_Piece_(anime)" target="_blank" rel="noopener">Leer más →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2019</span>
+          <h3>One Piece: Stampede</h3>
+          <p>Película del 20.º aniversario: una carrera de piratas por un tesoro ligado a Roger.</p>
+          <a class="card-link" href="https://es.wikipedia.org/wiki/One_Piece_Stampede" target="_blank" rel="noopener">Leer más →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2022</span>
+          <h3>One Piece Film: Red</h3>
+          <p>Uta, hija de Shanks, protagoniza la película más taquillera de la franquicia.</p>
+          <a class="card-link" href="https://es.wikipedia.org/wiki/One_Piece_Film:_Red" target="_blank" rel="noopener">Leer más →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2023</span>
+          <h3>Live-action de Netflix</h3>
+          <p>Iñaki Godoy encarna a Luffy en la serie con actores reales renovada por varias temporadas.</p>
+          <a class="card-link" href="https://es.wikipedia.org/wiki/One_Piece_(serie_de_televisi%C3%B3n)" target="_blank" rel="noopener">Leer más →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2023</span>
+          <h3>One Piece Odyssey</h3>
+          <p>RPG por turnos donde la tripulación explora la isla misteriosa de Waford y recupera sus recuerdos.</p>
+          <a class="card-link" href="https://es.wikipedia.org/wiki/One_Piece_Odyssey" target="_blank" rel="noopener">Leer más →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CITA ============ -->
+  <section class="section quote-band">
+    <div class="container">
+      <blockquote class="big-quote reveal">
+        <p>«¿Mi tesoro? Si lo queréis, es vuestro… ¡Buscadlo! Yo dejé todo lo que este mundo puede ofrecer en ese lugar»</p>
+        <cite>— Gol D. Roger, palabras finales del Capítulo 1</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO ============ -->
+  <section class="section section-alt" id="video">
+    <div class="container grid grid-2">
+      <div class="video-text reveal">
+        <p class="eyebrow">Opening 1 · Desde 1999</p>
+        <h2>"We Are!"</h2>
+        <p>
+          Interpretado por Hiroshi Kitadani, este opening inauguró el anime en octubre de 1999
+          y se convirtió en el himno de la franquicia: la promesa de zarpar, la amistad de la
+          tripulación y un horizonte sin final.
+        </p>
+        <p>
+          Más de dos décadas después, "We Are!" sigue sonando en cada despedida de arco,
+          en cada estadio de concierto y en la voz de millones de fans que corean
+          <em>«kore de ii no ka?»</em> antes del primer compás.
+        </p>
+      </div>
+
+      <div class="video-wrap reveal">
+        <iframe
+          src="https://www.youtube.com/embed/YoeP9w5UIlg"
+          title="We Are! — Opening 1 de One Piece (Hiroshi Kitadani)"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JUEGO: MEMORIA DEL GRAND LINE ============ -->
+  <section class="section" id="juego">
+    <div class="container">
+      <p class="eyebrow reveal">Juega y aprende</p>
+      <h2 class="reveal">Memoria del Grand Line</h2>
+      <p class="section-intro reveal">
+        Encuentra las parejas: cada <strong>integrante de la tripulación</strong> tiene su carta gemela
+        con su <strong>rol y una pista</strong>. Voltea dos cartas por turno; si coinciden, se quedan
+        abiertas. ¡Completa el tablero en el menor número de movimientos!
+      </p>
+
+      <div class="game-hud reveal">
+        <div class="hud-item"><span id="gameMoves">0</span> movimientos</div>
+        <div class="hud-item"><span id="gamePairs">0</span>/6 parejas</div>
+        <div class="hud-item"><span id="gameTime">0:00</span></div>
+        <button class="btn btn-primary btn-small" id="gameRestart">Reiniciar</button>
+      </div>
+
+      <div class="game-board reveal" id="gameBoard" aria-label="Tablero del juego de memoria"></div>
+
+      <!-- Pantalla de victoria -->
+      <div class="game-win" id="gameWin" hidden>
+        <div class="game-win-card">
+          <div class="win-butterflies" aria-hidden="true">
+            <span>⚓</span><span>🍖</span><span>🏴‍☠️</span><span>🧭</span><span>⚓</span>
+          </div>
+          <h3>¡Toda la tripulación a bordo!</h3>
+          <p id="gameWinText">Completaste el tablero.</p>
+          <button class="btn btn-primary" id="gamePlayAgain">Jugar de nuevo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FUENTES OFICIALES ============ -->
+  <section class="section section-alt" id="oficial">
+    <div class="container">
+      <p class="eyebrow reveal">Del mástil a tu pantalla</p>
+      <h2 class="reveal">Dónde seguir la aventura</h2>
+      <p class="section-intro reveal">
+        La mejor forma de apoyar a Oda y a Toei es consumir la obra por canales oficiales:
+        así llegan los capítulos traducidos el mismo día de su publicación en Japón y se financia
+        el siguiente arco de la saga.
+      </p>
+
+      <div class="grid grid-2 centro-grid">
+        <article class="centro-card reveal">
+          <h3>El universo y su autor</h3>
+          <p>
+            Eiichiro Oda dibuja One Piece desde 1997 con una disciplina legendaria: dormía poco,
+            planificaba cada arco años adelante y escondió pistas del final desde el capítulo uno.
+            Estos recursos ayudan a orientarse en veinticinco años de historia:
+          </p>
+          <ul class="centro-links">
+            <li><a href="https://es.wikipedia.org/wiki/Eiichir%C5%8D_Oda" target="_blank" rel="noopener">Quién es Eiichiro Oda</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Monkey_D._Luffy" target="_blank" rel="noopener">Monkey D. Luffy</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Gol_D._Roger" target="_blank" rel="noopener">Gol D. Roger y el tesoro</a></li>
+            <li><a href="https://one-piece.com/" target="_blank" rel="noopener">One Piece.com (web oficial japonesa)</a></li>
+          </ul>
+        </article>
+
+        <article class="centro-card reveal">
+          <h3>Dónde leerlo y verlo</h3>
+          <p>
+            Manga y anime están disponibles legalmente en español con simulcast simultáneo
+            a Japón. Plataformas habituales de la saga:
+          </p>
+          <ul class="centro-links">
+            <li><a href="https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece" target="_blank" rel="noopener"><strong>Crunchyroll</strong></a> — el anime con subtítulos y doblaje al día.</li>
+            <li><a href="https://www.netflix.com/title/80117869" target="_blank" rel="noopener"><strong>Netflix</strong></a> — sagas clásicas del anime y el live-action.</li>
+            <li><a href="https://www.toei-anim.co.jp/tv/onepiece/" target="_blank" rel="noopener"><strong>Toei Animation</strong></a> — sitio japonés del anime.</li>
+            <li><a href="https://mangaplus.shueisha.co.jp/" target="_blank" rel="noopener"><strong>Manga Plus</strong></a> — capítulos de Shueisha gratis y legales.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOTICIAS ============ -->
+  <section class="section" id="noticias">
+    <div class="container">
+      <p class="eyebrow reveal">Noticias</p>
+      <h2 class="reveal">Últimos vientos del Grand Line</h2>
+
+      <div class="grid news-grid">
+        <article class="news-item reveal">
+          <time datetime="2026">Próximamente</time>
+          <h3>Live-action: temporada 2</h3>
+          <p>Los Sombrero de Paja ponen proa a Loguetown y Alabasta en la nueva temporada de Netflix.</p>
+        </article>
+        <article class="news-item reveal">
+          <time datetime="2024">Remake</time>
+          <h3>The One Piece</h3>
+          <p>WIT Studio prepara un remake animado del arco de East Blue para Netflix, con animación de última generación.</p>
+        </article>
+        <article class="news-item reveal">
+          <time datetime="2022-08">Récord</time>
+          <h3>500 millones de copias</h3>
+          <p>El manga superó los 500 millones de ejemplares en circulación: nadie vende tanto con un solo autor.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-brand">One Piece<span class="nav-dot">.</span></p>
+      <p>Sitio fan dedicado al manga de Eiichiro Oda (desde 1997).</p>
+    </div>
+    <nav aria-label="Enlaces del pie">
+      <ul class="footer-links">
+        <li><a href="#biografia">Historia</a></li>
+        <li><a href="#obras">La saga</a></li>
+        <li><a href="#video">Opening</a></li>
+      </ul>
+    </nav>
+    <p class="footer-credit">Hecho con HTML semántico, CSS Grid y JS · Sitio de ejemplo.</p>
+  </div>
+</footer>
+
+<a href="#biografia" class="to-top" id="toTop" aria-label="Volver arriba">↑</a>
+
+<!-- ============ CHATBOT "PREGÚNTALE AL BOT" ============ -->
+<button class="chat-fab" id="chatFab" aria-label="Abrir chat sobre One Piece" aria-expanded="false">
+  <span class="chat-fab-icon">🏴‍☠️</span>
+</button>
+
+<div class="chat-window" id="chatWindow" hidden>
+  <div class="chat-header">
+    <div>
+      <p class="chat-title">Log Pose</p>
+      <p class="chat-sub">Bot del Grand Line: personajes, saga y secretos</p>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label="Cerrar chat">×</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+  <div class="chat-chips" id="chatChips"></div>
+
+  <form class="chat-input-row" id="chatForm" autocomplete="off">
+    <input type="text" id="chatInput" placeholder="Escribe tu pregunta…" aria-label="Escribe tu pregunta">
+    <button type="submit" class="chat-send" aria-label="Enviar">➤</button>
+  </form>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
